@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            background-image: url(D.jpg);
+            
+        }
+        .container {
+            max-width: 600px;
+            height: 650px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(12, 72, 146, 0.5), 0 0 30px rgba(12, 72, 146, 0.5), 0 0 40px;
+            background-image: url(B.jpg);
+        }
+        .title {
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: white;
+        }
+        .add-task {
+            display: block;
+            font-size: 23px;
+            width: 100%;
+            padding: 20px;
+            background: #f4f1e8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 25px;
+            
+        }
+        .task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border: 3px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 35px;
+            font-size: 20px;
+            color: white;
+            box-shadow: 0 0 10px rgba(13, 36, 190, 0.5), 0 0 20px rgba(13, 36, 190, 0.5), 0 0 10px;
+        }
+        .task input {
+            margin-right: 15px;
+        }
+        .priority {
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+        .low { background: wheat; color: #155724; }
+        .medium { background: #cce5ff; color: #004085; }
+        .high { background: #f8d7da; color: #721c24; }
+        .progress {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar span {
+            display: block;
+            height: 100%;
+            width: 25%; /* Example completion */
+            background: #4caf50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">To-Do List</div>
+        <button class="add-task">+ Add Task</button><div class="task">
+        <input type="checkbox" checked>
+        <span>Design homepage</span>
+        <span class="priority low">Low</span>
+    </div>
+    <div class="task">
+        <input type="checkbox">
+        <span>Write report</span>
+        <span class="priority high">High</span>
+    </div>
+    <div class="task">
+        <input type="checkbox">
+        <span>Send invoice</span>
+        <span class="priority">May 8</span>
+    </div>
+    <div class="task">
+        <input type="checkbox">
+        <span>Update documentation</span>
+        <span class="priority medium">Medium</span>
+    </div>
+    
+    <div class="progress">
+        <small style="color: white;">1 of 4 completed</small>
+        <div class="progress-bar">
+            <span></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
