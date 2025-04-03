@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+.head {
+    background-size: cover;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(9, 18, 27);
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.container {
+    background-image: url(image.png);
+    background-size: cover;
+    color: #c2c2c5;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 0 0 10px rgba(49, 177, 192, 0.942);       
+}
